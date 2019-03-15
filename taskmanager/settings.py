@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'qa',
+    'taggit',
+    'hitcount',
+    'django_markdown',
     'tasks',
 ]
 
@@ -123,3 +127,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+QA_SETTINGS = {
+    'qa_messages': True,
+    'qa_description_optional': False,
+    'reputation': {
+        'CREATE_QUESTION': 0,
+        'CREATE_ANSWER': 0,
+        'CREATE_ANSWER_COMMENT': 0,
+        'CREATE_QUESTION_COMMENT': 0,
+        'ACCEPT_ANSWER': 0,
+        'UPVOTE_QUESTION': 0,
+        'UPVOTE_ANSWER': 0,
+        'DOWNVOTE_QUESTION': 0,
+        'DOWNVOTE_ANSWER': 0,
+    }
+}
