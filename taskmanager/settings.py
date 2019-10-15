@@ -81,11 +81,9 @@ WSGI_APPLICATION = 'taskmanager.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'taskmanager',
-        'USER': 'djangouser',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
     }
 }
 
